@@ -1,6 +1,6 @@
 package session_six_classes_objects_revision.assignment_problems;
 
-class Employee {
+class CompanyEmployee {
 
     String empName;
     double salary;
@@ -8,7 +8,7 @@ class Employee {
     static String companyName = "Bright Horizon Technologies";
     static int employeeCount = 0;
 
-    Employee(String empName, double salary) {
+    CompanyEmployee(String empName, double salary) {
         this.empName = empName;
         this.salary = salary;
         employeeCount++; // increments once every time an object is created
@@ -23,10 +23,10 @@ class Employee {
 public class CompanyMain {
 
     public static void main(String[] args) {
-        Employee e1 = new Employee("Ravi", 45000);
-        Employee e2 = new Employee("Divya", 65000);
-        Employee e3 = new Employee("Arjun", 0); // intern
+        CompanyEmployee e1 = new CompanyEmployee("Ravi", 45000);
+        CompanyEmployee e2 = new CompanyEmployee("Divya", 65000);
+        CompanyEmployee e3 = new CompanyEmployee("Arjun", 0); // intern
 
-        Employee.printCompanyInfo(); // called through the CLASS name
+        CompanyEmployee.printCompanyInfo(); // called through the CLASS name
     }
 }
